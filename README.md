@@ -155,9 +155,11 @@ Schedule2
 ```
 
 <br/>
-<br/>
+
 
 **In this section of code, we will visualize the data and save them as png. images.**
+
+<br/>
 
 Plot 1: This plot illustrates the time gap between train arrivals for a pre-identified stop.
 - First, identify the stop_id that we want to search
