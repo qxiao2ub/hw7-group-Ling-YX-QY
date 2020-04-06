@@ -180,8 +180,8 @@ plt.figure(figsize=(8, 5))
 
 plt.title('Train Arrival Schedule of Stop: '+str(id)+' on '+str(times['date']))
 
-plt.ylabel('Time of Arrivals')
 plt.xlabel('Arrivals')
+plt.ylabel('Time of Arrivals')
 
 plt.plot(x, y, 'go-')
 
@@ -191,8 +191,9 @@ for i, txt in enumerate(y):
 plt.savefig('MTA_Plot1.png')
 ```
 
+The output from this code is shown below:
 
-
+![Image of Plot](images/MTA_plot1.png)
 
 
 
