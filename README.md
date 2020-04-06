@@ -25,14 +25,14 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 ## Sources (Not done, add in the references you used)
 
 - References for API
-1. The source code came from [a Github page](https://github.com/nolanbconaway/underground)
-2. The code retrieves data from [NYC MTA](https://datamine.mta.info/)
+1. The source code came from [a Github page.](https://github.com/nolanbconaway/underground)
+2. The code retrieves data from [NYC MTA.](https://datamine.mta.info/)
 
 - References used in Transform API data to Python Dataframe section
-1. https://thispointer.com/pandas-convert-dataframe-index-into-column-using-dataframe-reset_index-in-python/
-2. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rename.html
-3. https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842
-4. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html
+1. [Convert dataframe index to a new column](https://thispointer.com/pandas-convert-dataframe-index-into-column-using-dataframe-reset_index-in-python/)
+2. [Rename dataframe column](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.rename.html)
+3. [Add a new column to a specific postion of dataframe](https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842)
+4. [Extract time information from Timestamp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html)
 
 - References used in Data Visualization section
 1. 
