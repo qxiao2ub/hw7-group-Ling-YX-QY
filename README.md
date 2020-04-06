@@ -23,11 +23,10 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 - The code retrieves data from [the organization for hosting cool data](http://www.anothermagicalnonexistentplace.com)
 
 ## Sources (Not done, add in the references you used)
-*In this section, provide links to our references.
 
-- Reference for API
-
-
+- References for API
+1. The source code came from 
+2. The code retrieves data from
 
 - References used in Transform API data to Python Dataframe section
 1. https://thispointer.com/pandas-convert-dataframe-index-into-column-using-dataframe-reset_index-in-python/
@@ -35,6 +34,11 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 3. https://discuss.codecademy.com/t/can-we-add-a-new-column-at-a-specific-position-in-a-pandas-dataframe/355842
 4. https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html
 
+- References used in Data Visualization section
+1. 
+2. 
+3. 
+4. 
 
 ---
 
