@@ -82,7 +82,7 @@ The output from this code is shown below:
 
 ---
 
-## Explanation of the Code (Ling edited, Not done yet)
+## Explanation of the Code (Ling's part)
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
 - Use a "magic command" to specify how we want our plots displayed
@@ -95,7 +95,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 ```
-
+<br/>
 *In this section of code, we will transform the API data into a python dataframe.*
 
 The API data comes in as a dictionary format.
@@ -173,7 +173,7 @@ y = times.dropna()[3::]
 x = range(0, len(y), 1)
 ```
 
-Finally, we visualize the data. We save our plot as a .png image.
+Finally, we visualize the data. We save our plot as a png. image.
 - Each line of code below corresponding to one of the adjustment
 	- Adjust the plot size, plot title, x and y labels, graph a line plot, label data points, and save plot
 	
