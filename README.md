@@ -85,9 +85,15 @@ The output from this code is shown below:
 ## Explanation of the Code (Ling edited, Not done yet)
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
+- Use a "magic command" to specify how we want our plots displayed
+- %matplotlib notebook show the dynamic/interactive plot
+
 ```
-import numpy as np
 import pandas as pd
+
+%matplotlib notebook
+import matplotlib.pyplot as plt
+
 ```
 
 *In this section of code, we will transform the API data into a python dataframe.*
@@ -140,6 +146,56 @@ Display what does the cleaned dataframe looks like now
 ```
 Schedule2
 ```
+
+\br
+
+*In this section of code, we will visualize the data and save them as png. images.*
+
+Plot 1: This plot illustrates the time gap between train arrivals for a pre-identified stop.
+- First, identify the stop_id that we want to search
+- In this case, we use stop 'Q05N' as the pre-identified stop
+```
+id = 'Q05N'
+```
+
+Identify the x and y variables for the plot
+- Find the index that associates with the corresponding stop
+- Find the schedule of that stop
+- Drop the NAs in the data
+- Set the x-values
+
+```
+index = int(Schedule2.index[Schedule2['stop_id'] == id].values)
+times = Schedule2.iloc[index]
+y = times.dropna()[3::]
+x = range(0, len(y), 1)
+```
+
+Finally, we visualize the data. We save our plot as a .png image.
+- Each line of code below corresponding to one of the adjustment
+	- Adjust the plot size, plot title, x and y labels, graph a line plot, label data points, and save plot
+	
+```
+plt.figure(figsize=(8, 5))
+
+plt.title('Train Arrival Schedule of Stop: '+str(id)+' on '+str(times['date']))
+
+plt.ylabel('Time of Arrivals')
+plt.xlabel('Arrivals')
+
+plt.plot(x, y, 'go-')
+
+for i, txt in enumerate(y):
+    plt.annotate(txt, (x[i]+0.3, y[i]))
+
+plt.savefig('MTA_Plot1.png')
+```
+
+
+
+
+
+
 
 ---
 
