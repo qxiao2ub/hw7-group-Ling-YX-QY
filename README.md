@@ -61,9 +61,8 @@ The output from this code is shown below:
 ## Explanation of the Code (Ling edited, Not done yet)
 *In this section of code, we will transform the API data into a python dataframe.*
 
-The API data come in as a dictionary format. 
-Convert API data from dictionary format into python dataframe
-Display what does the original dataframe looks like
+The API data comes in as a dictionary format. 
+Convert API data from dictionary format into python dataframe and display what does the original dataframe looks like
 ```
 Schedule = pd.DataFrame.from_dict(q_train_stops, orient='index')
 Schedule
