@@ -102,7 +102,7 @@ for i in range(0, len(Schedule)):
     
 Schedule2.insert(1, 'direction', Direction)       
 ```
-- *NOTE:  Do not rerun dataframe insert function code the second time without rerun the codes above, because an error will appear if the column is already inserted.
+- *NOTE:  Do not rerun dataframe insert function code the second time without rerun the codes above, because an error will appear if the column is already inserted.*
 
 The original time columns are in Timestamp format, which contains both date and time information.
 - Extract date information from the Timestamp column
