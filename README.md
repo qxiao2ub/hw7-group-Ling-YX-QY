@@ -82,33 +82,26 @@ Schedule = pd.DataFrame.from_dict(q_train_stops, orient='index')
 Schedule
 ```
 
-Add the index to be a new column in dataframe
-The original index is stop_id, so add stop_id to be a new column of dataframe
+The original index of "Schedule" dataframe is stop id.\
+We add stop id (the index) to be a new column of the dataframe.\
+We then rename the newly added column as "stop_id".
 ```
 Schedule1 = Schedule.reset_index()
-```
-
-Rename the newly added column as "stop_id"
-```
 Schedule2 = Schedule1.rename(columns={'index':'stop_id'})
 ```
-
-Read the last character of stop_id to identify the direction, N represents North, S represents South
+The last character of stop_id tells the direction of the stop (N represents North, S represents South).
+Read the last character of stop_id to identify the direction. 
+Insert the new direction column to a specific postion, e.g. position 1 in this case
 ```
 Direction = []
 
 for i in range(0, len(Schedule)):
     Direction.append(Schedule2.stop_id[i][-1])
-        
-# Direction
+    
+Schedule2.insert(1, 'direction', Direction)       
 ```
+- *Do not run this code the second time without rerun the codes above, because an error will appear if the column is already inserted.
 
-Insert the new direction column to a specific postion, e.g. position 1 in this case
-Do not run this code the second time without rerun the above codes, 
-because it will appear an error if the column is already inserted 
-```
-Schedule2.insert(1, 'direction', Direction)
-```
 
 Extract date information from the Timestamp column, create a new column and insert it to position 2
 ```
