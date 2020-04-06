@@ -83,12 +83,12 @@ Schedule
 ```
 
 The original index of "Schedule" dataframe is stop id.\
-We add stop id (the index) to be a new column of the dataframe.\
-We then rename the newly added column as "stop_id".
+We add stop id (the index) to be a new column of the dataframe and then rename the newly added column as "stop_id".
 ```
 Schedule1 = Schedule.reset_index()
 Schedule2 = Schedule1.rename(columns={'index':'stop_id'})
 ```
+
 The last character of stop_id tells the direction of the stop (N represents North, S represents South).
 Read the last character of stop_id to identify the direction. 
 Insert the new direction column to a specific postion, e.g. position 1 in this case
@@ -100,9 +100,9 @@ for i in range(0, len(Schedule)):
     
 Schedule2.insert(1, 'direction', Direction)       
 ```
-- *Do not run this code the second time without rerun the codes above, because an error will appear if the column is already inserted.
+- *Do not run this section code the second time without rerun the codes above, because an error will appear if the column is already inserted.
 
-
+The original time columns are in Timestamp format, which contains both date and time information.
 Extract date information from the Timestamp column, create a new column and insert it to position 2
 ```
 Schedule2.insert(2, 'date', Schedule2[0].dt.date)
@@ -110,12 +110,13 @@ Schedule2.insert(2, 'date', Schedule2[0].dt.date)
 
 Replace the original Timestamp columns (Timestamp shows date and time) with time only
 ```
-for j in range(0, len(Schedule2)):                # loop through rows
-    for k in range(3, len(Schedule2.iloc[0])):       # loop through columns 
-        if pd.notna(Schedule2.iloc[j, k]):              # Checking for missing value
+for j in range(0, len(Schedule2)):                   # loop through rows
+    for k in range(3, len(Schedule2.iloc[0])):          # loop through columns 
+        if pd.notna(Schedule2.iloc[j, k]):                 # Checking for missing value
             Schedule2.iloc[j, k] = pd.Timestamp.time(Schedule2.iloc[j, k])
 ```            
-Display what does the new dataframe looks like now
+
+Display what does the cleaned dataframe looks like now
 ```
 Schedule2
 ```
