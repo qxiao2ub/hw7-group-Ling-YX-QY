@@ -83,6 +83,13 @@ The output from this code is shown below:
 ---
 
 ## Explanation of the Code (Ling edited, Not done yet)
+
+The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
+```
+import numpy as np
+import pandas as pd
+```
+
 *In this section of code, we will transform the API data into a python dataframe.*
 
 The API data comes in as a dictionary format.
