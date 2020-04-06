@@ -25,8 +25,8 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 ## Sources (Not done, add in the references you used)
 
 - References for API
-1. The source code came from 
-2. The code retrieves data from
+1. The source code came from [a Github page](https://github.com/nolanbconaway/underground)
+2. The code retrieves data from [NYC MTA](https://datamine.mta.info/)
 
 - References used in Transform API data to Python Dataframe section
 1. https://thispointer.com/pandas-convert-dataframe-index-into-column-using-dataframe-reset_index-in-python/
@@ -115,7 +115,7 @@ The original time columns are in Timestamp format, which contains both date and 
 Schedule2.insert(2, 'date', Schedule2[0].dt.date)
 ```
 
-- Replace the original Timestamp columns (Timestamp shows both date and time) with time only
+Replace the original Timestamp columns (Timestamp shows both date and time) with time only
 ```
 for j in range(0, len(Schedule2)):                   # loop through rows
     for k in range(3, len(Schedule2.iloc[0])):          # loop through columns 
@@ -123,7 +123,7 @@ for j in range(0, len(Schedule2)):                   # loop through rows
             Schedule2.iloc[j, k] = pd.Timestamp.time(Schedule2.iloc[j, k])
 ```            
 
-- Display what does the cleaned dataframe looks like now
+Display what does the cleaned dataframe looks like now
 ```
 Schedule2
 ```
