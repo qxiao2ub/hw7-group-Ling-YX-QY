@@ -1,6 +1,6 @@
 # Write a Brief Descriptive Title Here
 
-Authors:  **Name 1** and **Name 2**
+Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 
 ---
 
