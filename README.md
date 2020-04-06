@@ -80,9 +80,13 @@ The output from this code is shown below:
 
 ![Image of Plot](images/samplefigure.png)
 
+
+
 ---
 
+
 ## Explanation of the Code (Ling's part)
+
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
 - Use a "magic command" to specify how we want our plots displayed
@@ -93,9 +97,10 @@ import pandas as pd
 
 %matplotlib notebook
 import matplotlib.pyplot as plt
-
 ```
 <br/>
+
+
 *In this section of code, we will transform the API data into a python dataframe.*
 
 The API data comes in as a dictionary format.
@@ -148,8 +153,7 @@ Schedule2
 ```
 
 
-
-
+<br/>
 
 *In this section of code, we will visualize the data and save them as png. images.*
 
