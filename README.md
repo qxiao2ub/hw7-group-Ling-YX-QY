@@ -93,7 +93,7 @@ Schedule2 = Schedule1.rename(columns={'index':'stop_id'})
 
 The last character of stop_id tells the direction of the stop (N represents North, S represents South).
 - Read the last character of stop_id to identify the direction.
-- Insert the new direction column to a specific postion, e.g. position 1 in this case.
+- Insert the new direction column to a specific postion, e.g. column position 1 in this case.
 ```
 Direction = []
 
@@ -102,11 +102,11 @@ for i in range(0, len(Schedule)):
     
 Schedule2.insert(1, 'direction', Direction)       
 ```
-- *Do not run this section code the second time without rerun the codes above, because an error will appear if the column is already inserted.
+- *NOTE:  Do not rerun dataframe insert function code the second time without rerun the codes above, because an error will appear if the column is already inserted.
 
 The original time columns are in Timestamp format, which contains both date and time information.
 - Extract date information from the Timestamp column
-- Create a new column and insert it to position 2 of the dataframe
+- Create a new column and insert it to column position 2 of the dataframe
 ```
 Schedule2.insert(2, 'date', Schedule2[0].dt.date)
 ```
