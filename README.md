@@ -119,7 +119,7 @@ Replace the original Timestamp columns (Timestamp shows both date and time) with
 ```
 for j in range(0, len(Schedule2)):                   # loop through rows
     for k in range(3, len(Schedule2.iloc[0])):          # loop through columns 
-        if pd.notna(Schedule2.iloc[j, k]):                 # Checking for missing value
+        if pd.notna(Schedule2.iloc[j, k]):                 # checking for missing value
             Schedule2.iloc[j, k] = pd.Timestamp.time(Schedule2.iloc[j, k])
 ```            
 
