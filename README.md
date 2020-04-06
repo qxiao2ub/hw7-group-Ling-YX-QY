@@ -102,6 +102,7 @@ import matplotlib.pyplot as plt
 
 
 **In this section of code, we will transform the API data into a python dataframe.**
+
 <br/>
 
 The API data comes in as a dictionary format.
