@@ -41,8 +41,8 @@ References used in Transform API data to Python Dataframe section
 - [Extract time information from Timestamp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html)
 
 References used in Data Visualization section
-- []()
-- []()
+- [Add variable to plot title](https://stackoverflow.com/questions/43757820/how-to-add-a-variable-to-python-plt-title)
+- [Lable data points on plot](https://stackoverflow.com/questions/14432557/matplotlib-scatter-plot-with-different-text-at-each-data-point)
 - []()
 - []()
 
