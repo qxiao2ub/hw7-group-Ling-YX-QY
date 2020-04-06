@@ -62,14 +62,56 @@ The output from this code is shown below:
 *In this section of code, we will transform the API data into a python dataframe.*
 
 The API data comes in as a dictionary format.\
-Convert API data from dictionary format into python dataframe and display what does the original dataframe looks like
+Convert API data from dictionary format into a python dataframe and display what does the original dataframe looks like
 ```
 Schedule = pd.DataFrame.from_dict(q_train_stops, orient='index')
 Schedule
 ```
 
+Add the index to be a new column in dataframe
+The original index is stop_id, so add stop_id to be a new column of dataframe
+```
+Schedule1 = Schedule.reset_index()
+```
 
+Rename the newly added column as "stop_id"
+```
+Schedule2 = Schedule1.rename(columns={'index':'stop_id'})
+```
 
+Read the last character of stop_id to identify the direction, N represents North, S represents South
+```
+Direction = []
+
+for i in range(0, len(Schedule)):
+    Direction.append(Schedule2.stop_id[i][-1])
+        
+# Direction
+```
+
+Insert the new direction column to a specific postion, e.g. position 1 in this case
+Do not run this code the second time without rerun the above codes, 
+because it will appear an error if the column is already inserted 
+```
+Schedule2.insert(1, 'direction', Direction)
+```
+
+Extract date information from the Timestamp column, create a new column and insert it to position 2
+```
+Schedule2.insert(2, 'date', Schedule2[0].dt.date)
+```
+
+Replace the original Timestamp columns (Timestamp shows date and time) with time only
+```
+for j in range(0, len(Schedule2)):                # loop through rows
+    for k in range(3, len(Schedule2.iloc[0])):       # loop through columns 
+        if pd.notna(Schedule2.iloc[j, k]):              # Checking for missing value
+            Schedule2.iloc[j, k] = pd.Timestamp.time(Schedule2.iloc[j, k])
+```            
+Display what does the new dataframe looks like now
+```
+Schedule2
+```
 
 ---
 
