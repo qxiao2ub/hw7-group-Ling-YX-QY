@@ -147,7 +147,9 @@ Display what does the cleaned dataframe looks like now
 Schedule2
 ```
 
-\br
+
+
+
 
 *In this section of code, we will visualize the data and save them as png. images.*
 
@@ -193,7 +195,7 @@ plt.savefig('MTA_Plot1.png')
 
 The output from this code is shown below:
 
-![Image of Plot](images/MTA_plot1.png)
+![Image of Plot](images/MTA_Plot1.png)
 
 
 
