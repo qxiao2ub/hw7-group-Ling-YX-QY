@@ -87,6 +87,7 @@ The output from this code is shown below:
 
 ## Explanation of the Code (Ling's part)
 
+<br/>
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
 - Use a "magic command" to specify how we want our plots displayed
@@ -99,9 +100,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 <br/>
+<br/>
 
-
-*In this section of code, we will transform the API data into a python dataframe.*
+**In this section of code, we will transform the API data into a python dataframe.**
 
 The API data comes in as a dictionary format.
 - Convert API data from dictionary format into a python dataframe
@@ -152,10 +153,10 @@ Display what does the cleaned dataframe looks like now
 Schedule2
 ```
 
-
+<br/>
 <br/>
 
-*In this section of code, we will visualize the data and save them as png. images.*
+**In this section of code, we will visualize the data and save them as png. images.**
 
 Plot 1: This plot illustrates the time gap between train arrivals for a pre-identified stop.
 - First, identify the stop_id that we want to search
