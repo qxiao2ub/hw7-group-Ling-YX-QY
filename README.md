@@ -182,8 +182,8 @@ x = range(0, len(y), 1)
 ```
 
 Finally, we visualize the data. We save our plot as a png. image.
-- Each line of code below corresponding to one of the adjustment
-	- Adjust the plot size, plot title, x and y labels, graph a line plot, label data points, and save plot
+- Each line of code below correspondes to one of the adjustments, respectively
+	- Adjust the plot size, plot title, x and y labels, graph a line plot, label data points, and save plot to png.
 	
 ```
 plt.figure(figsize=(8, 5))
