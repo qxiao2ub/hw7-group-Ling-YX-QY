@@ -35,10 +35,10 @@ References used in Transform API data to Python Dataframe section
 - [Extract time information from Timestamp](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Timestamp.html)
 
 References used in Data Visualization section
-- 
-- 
-- 
-- 
+- []()
+- []()
+- []()
+- []()
 
 ---
 
