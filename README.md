@@ -1,5 +1,5 @@
 # Write a Brief Descriptive Title Here
-# HW7 API Data - MTA API
+# HW7 API Data - NYC MTA API
 
 Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 
