@@ -25,7 +25,7 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 ## Sources (Not done, add in the references you used)
 
 References for API
-- The source code came from [a Github page.](https://github.com/nolanbconaway/underground)
+- The source code came from [a GitHub repository.](https://github.com/nolanbconaway/underground)
 - The code retrieves data from [NYC MTA.](https://datamine.mta.info/)
 
 References used in Transform API data to Python Dataframe section
