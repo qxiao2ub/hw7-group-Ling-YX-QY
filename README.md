@@ -87,7 +87,6 @@ The output from this code is shown below:
 
 ## Explanation of the Code (Ling's part)
 
-<br/>
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
 - Use a "magic command" to specify how we want our plots displayed
@@ -100,9 +99,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 ```
 <br/>
-<br/>
+
 
 **In this section of code, we will transform the API data into a python dataframe.**
+<br/>
 
 The API data comes in as a dictionary format.
 - Convert API data from dictionary format into a python dataframe
