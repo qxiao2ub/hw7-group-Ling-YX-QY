@@ -15,7 +15,7 @@ Authors:  **Ling Lin**, **Xuanyu Lu** and **Qingyang Xiao**
 - *Describe the source of the data.  Include URLs.*  
 - *Explain how recent is this data?  How often is it updated?*
 
-## Introduction (Not done)
+## Introduction (Qingyang)
 - 
 - 
 - 
@@ -222,7 +222,7 @@ The output from this code is shown below:
 
 - *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
 
-## How to Run the Code (Not done)
+## How to Run the Code (Xuanyu)
 
 
 
@@ -232,4 +232,4 @@ The output from this code is shown below:
 *Finally, you should suggest any additional features that would be useful/interesting.  For example, what else could you do with these data?  How might you want to modify the plot to be more descriptive?  What summary statistics might you want to calculate with these data?*
 
 
-## Suggestions (Not done)
+## Suggestions (Ling)
