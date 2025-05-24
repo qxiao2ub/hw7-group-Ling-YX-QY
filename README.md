@@ -1,5 +1,5 @@
 # Write a Brief Descriptive Title Here (Feel free to add in what you have)
-# HW7 API Data - NYC MTA API
+# API Data - NYC MTA API
 
 Authors:  **Qingyang Xiao**
 
@@ -16,12 +16,6 @@ Authors:  **Qingyang Xiao**
 - *Explain how recent is this data?  How often is it updated?*
 
 ## Introduction (Qingyang)
-- 
-- 
-- 
-
-
----
 
 ## Sources
 *In this section, provide links to your references.  For example:*
@@ -85,7 +79,7 @@ The output from this code is shown below:
 ---
 
 
-## Explanation of the Code (Ling's part)
+## Explanation of the Code
 
 
 The code, `HW7_MTA_API.ipynb`, begins by importing necessary Python packages:
@@ -222,7 +216,7 @@ The output from this code is shown below:
 
 - *NOTE: You are welcome to provide instructions using Anaconda or IPython.*
 
-## How to Run the Code (Xuanyu)
+## How to Run the Code
 
 
 
@@ -232,4 +226,4 @@ The output from this code is shown below:
 *Finally, you should suggest any additional features that would be useful/interesting.  For example, what else could you do with these data?  How might you want to modify the plot to be more descriptive?  What summary statistics might you want to calculate with these data?*
 
 
-## Suggestions (Ling)
+## Suggestions
