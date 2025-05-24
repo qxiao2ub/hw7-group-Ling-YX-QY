@@ -1,7 +1,7 @@
 # Write a Brief Descriptive Title Here (Feel free to add in what you have)
 # API Data - NYC MTA API
 
-Authors:  **Qingyang Xiao**
+Author:  **Qingyang Xiao**
 
 ---
 
