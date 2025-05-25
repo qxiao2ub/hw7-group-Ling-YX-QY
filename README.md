@@ -1,4 +1,3 @@
-# Write a Brief Descriptive Title Here (Feel free to add in what you have)
 # API Data - NYC MTA API
 
 Author:  **Qingyang Xiao**
